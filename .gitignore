@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node (if you add tooling later)
+node_modules/
+
+# Packaged / build outputs
+*.zip
+dist/
+build/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Local secrets
+.env
+.env.*

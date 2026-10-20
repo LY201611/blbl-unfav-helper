@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "BLBL 取消收藏助手",
+  "version": "1.12.0",
+  "description": "刷 B站收藏夹时一键操作：跳过 / 取消收藏 / 取消收藏并跳过。快捷键默认 z/x/c，可在弹窗自定义为任意单键或组合键。",
+  "permissions": ["tabs", "scripting", "storage"],
+  "host_permissions": ["*://*.bilibili.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.bilibili.com/*"],
+      "js": ["net-hook.js"],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": false
+    },
+    {
+      "matches": ["*://*.bilibili.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "BLBL 取消收藏助手"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

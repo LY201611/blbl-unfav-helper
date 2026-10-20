@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <style>
+    body { width: 280px; font: 13px/1.5 system-ui, "Microsoft YaHei", sans-serif; margin: 0; padding: 12px; }
+    h1 { font-size: 14px; margin: 0 0 8px; color: #fb7299; }
+    .status { color: #666; font-size: 12px; margin-bottom: 10px; word-break: break-all; min-height: 30px; }
+    .status b { color: #222; }
+    button { width: 100%; margin: 6px 0; padding: 9px; border: 0; border-radius: 8px;
+             background: #fb7299; color: #fff; font-size: 13px; cursor: pointer; }
+    button:hover { background: #e9628a; }
+    button.ghost { background: #f0f0f3; color: #333; }
+    .sec { margin-top: 12px; padding-top: 10px; border-top: 1px solid #eee; }
+    .sec h2 { font-size: 12px; color: #888; margin: 0 0 6px; font-weight: 600; }
+    .row { display: flex; align-items: center; margin: 5px 0; gap: 8px; }
+    .row label { flex: 1; color: #333; }
+    .row input { width: 90px; padding: 5px 8px; border: 1px solid #ddd; border-radius: 6px;
+                 font: 13px monospace; text-align: center; }
+    .hint { color: #999; font-size: 11px; margin-top: 6px; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <h1>BLBL 取消收藏助手</h1>
+  <div class="status" id="status">读取中…</div>
+  <button id="btn-skip">⏭ 跳过（下一个）</button>
+  <button id="btn-unfav">💔 取消收藏（继续播）</button>
+  <button id="btn-unfav-skip">💔⏭ 取消收藏并跳过</button>
+
+  <div class="sec">
+    <h2>快捷键（可填单键或组合，如 z / x / c / ctrl+z / alt+1）</h2>
+    <div class="row"><label>跳过</label><input id="hk-skip" maxlength="20" /></div>
+    <div class="row"><label>取消收藏</label><input id="hk-unfav" maxlength="20" /></div>
+    <div class="row"><label>取消收藏并跳过</label><input id="hk-unfav-skip" maxlength="20" /></div>
+    <button id="btn-save-hk" class="ghost">保存快捷键</button>
+    <div class="hint">默认 z / x / c。单键在视频全屏时同样有效；打字框中不触发。改动即时生效并随 Edge 同步。</div>
+  </div>
+
+  <div class="hint">需在收藏夹「播放全部」连播页（/list/ml…）使用；取消收藏只作用于当前收藏夹。</div>
+  <script src="popup.js"></script>
+</body>
+</html>
