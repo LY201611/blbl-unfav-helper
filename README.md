@@ -2,7 +2,7 @@
 
 > 🤖 **本插件由 AI 全流程开发（AI-built）**：需求拆解、架构设计、全部源代码、调试排错、文档撰写均由 AI 助手完成；人类用户仅提供功能需求与真机测试反馈。详见文末「关于 AI 开发」。
 
-[![developed by AI](https://img.shields.io/badge/developed%20by-AI-8A2BE2)](https://github.com)
+[![developed by AI](https://img.shields.io/badge/developed%20by-AI-8A2BE2)](https://github.com/LY201611/blbl-unfav-helper)
 [![manifest](https://img.shields.io/badge/manifest-MV3-blue)](https://developer.chrome.com/docs/extensions/mv3/)
 [![license](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 [![tests](https://img.shields.io/badge/tests-110%20passing-brightgreen)](./tests)
@@ -42,7 +42,7 @@
 
 支持 **Chrome 与 Edge**（二者均支持 MV3）。
 
-1. 获取仓库里的 `extension/` 文件夹（`git clone` 或下载 ZIP 后解压）；
+1. 获取仓库（含 `extension/` 文件夹）：`git clone https://github.com/LY201611/blbl-unfav-helper.git`，或下载 ZIP 后解压；
 2. 打开扩展管理页：
    - Edge：`edge://extensions`
    - Chrome：`chrome://extensions`

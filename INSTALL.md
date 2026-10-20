@@ -5,7 +5,7 @@
 ## 一、获取扩展文件 / Get the files
 
 ```bash
-git clone https://github.com/<your-username>/blbl-unfav-helper.git
+git clone https://github.com/LY201611/blbl-unfav-helper.git
 # 扩展代码在 clone 后的  release/extension/  目录（本仓库根即 release 内容时，直接用 extension/）
 ```
 
